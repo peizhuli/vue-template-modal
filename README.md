@@ -1,28 +1,28 @@
-1.main.jsÖĞÒıÈë²å¼ş
-import vueModal from 'vue-template-modal';
-Ìá¹©·½·¨£º$templateModal
-Vue.use(vueModal);
-2.Ê¹ÓÃ£ºthis.$templateModal(modalOptions );
-3.modalOptions ²ÎÊıÅäÖÃ
-modalOptions = {
+##1.main.jsä¸­å¼•å…¥æ’ä»¶
+'import vueModal from 'vue-template-modal';'
+###æä¾›æ–¹æ³•ï¼š$templateModal
+'Vue.use(vueModal);'
+##2.ä½¿ç”¨ï¼šthis.$templateModal(modalOptions );
+##3.modalOptions å‚æ•°é…ç½®
+`modalOptions = {
     //default setting options
-    hasMark: true,              //ÊÇ·ñ´øÕÚÕÖ
-    modelWidth: 600,            //µ¯´°¿í¶È
-    modelHeight: 400,           //µ¯´°¸ß¶È
-    modelBgColor: '#fff',       //µ¯´°±³¾°É«
-    modelType: 2,               //µ¯´°ÀàĞÍ£º{ 1: ÆÕÍ¨tipµ¯´°£¬durationºóÏûÊ§£¬2£ºĞè½»»¥µ¯´° }
-    hasCloseButton: true,      //ÊÇ·ñÓĞ¹Ø±Õ°´Å¥
-    hasFooterButtons: false,   //ÊÇ·ñÏÔÊ¾µ×²¿°´Å¥×é
-    hasHeader: false,          //ÊÇ·ñÏÔÊ¾µ¯´°±êÌâ
-    headerText: '±êÌâ',            //µ¯´°±êÌâÃèÊö
-    bodyHtml: '',              //µ¯´°Ö÷ÌåÄÚÈİ,¿ÉÎª×Ö·û´®/html±êÇ©/vue×é¼ş
-    bodyOptions: null,          // bodyÄÚÈİÎª×é¼şÊ±£¬ĞèÒª´«µİµÄprops²ÎÊı
-    confirmBtnText: 'È·¶¨',    //È·¶¨°´Å¥ÃèÊö
-    cancelBtnText: 'È¡Ïû',     //È¡Ïû°´Å¥ÃèÊö
-    activeBgColor: '#10a1e5',    //±êÌâ±³¾°É«£¬È·¶¨°´Å¥±³¾°É«
-    activeColor: '#fff',               //±êÌâ×ÖÌåÑÕÉ«£¬È·¶¨°´Å¥×ÖÌåÑÕÉ«
-    normalBgColor: '#999',       // È¡Ïû°´Å¥±³¾°É«
-    normalColor: '#fff',             //È¡Ïû°´Å¥×ÖÌåÑÕÉ«
-    callback: null,                   //È·¶¨°´Å¥»Øµ÷º¯Êı
-    duration: 3000                     //µ¯´°ÏÔÊ¾Ê±¼ä
-  };
+    hasMark: true,              //æ˜¯å¦å¸¦é®ç½©
+    modelWidth: 600,            //å¼¹çª—å®½åº¦
+    modelHeight: 400,           //å¼¹çª—é«˜åº¦
+    modelBgColor: '#fff',       //å¼¹çª—èƒŒæ™¯è‰²
+    modelType: 2,               //å¼¹çª—ç±»å‹ï¼š{ 1: æ™®é€štipå¼¹çª—ï¼Œdurationåæ¶ˆå¤±ï¼Œ2ï¼šéœ€äº¤äº’å¼¹çª— }
+    hasCloseButton: true,      //æ˜¯å¦æœ‰å…³é—­æŒ‰é’®
+    hasFooterButtons: false,   //æ˜¯å¦æ˜¾ç¤ºåº•éƒ¨æŒ‰é’®ç»„
+    hasHeader: false,          //æ˜¯å¦æ˜¾ç¤ºå¼¹çª—æ ‡é¢˜
+    headerText: 'æ ‡é¢˜',            //å¼¹çª—æ ‡é¢˜æè¿°
+    bodyHtml: '',              //å¼¹çª—ä¸»ä½“å†…å®¹,å¯ä¸ºå­—ç¬¦ä¸²/htmlæ ‡ç­¾/vueç»„ä»¶
+    bodyOptions: null,          // bodyå†…å®¹ä¸ºç»„ä»¶æ—¶ï¼Œéœ€è¦ä¼ é€’çš„propså‚æ•°
+    confirmBtnText: 'ç¡®å®š',    //ç¡®å®šæŒ‰é’®æè¿°
+    cancelBtnText: 'å–æ¶ˆ',     //å–æ¶ˆæŒ‰é’®æè¿°
+    activeBgColor: '#10a1e5',    //æ ‡é¢˜èƒŒæ™¯è‰²ï¼Œç¡®å®šæŒ‰é’®èƒŒæ™¯è‰²
+    activeColor: '#fff',               //æ ‡é¢˜å­—ä½“é¢œè‰²ï¼Œç¡®å®šæŒ‰é’®å­—ä½“é¢œè‰²
+    normalBgColor: '#999',       // å–æ¶ˆæŒ‰é’®èƒŒæ™¯è‰²
+    normalColor: '#fff',             //å–æ¶ˆæŒ‰é’®å­—ä½“é¢œè‰²
+    callback: null,                   //ç¡®å®šæŒ‰é’®å›è°ƒå‡½æ•°
+    duration: 3000                     //å¼¹çª—æ˜¾ç¤ºæ—¶é—´
+  };`
