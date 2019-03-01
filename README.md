@@ -5,6 +5,7 @@
 ## 2.使用：this.$templateModal(modalOptions );
 ## 3.modalOptions 参数配置
 modalOptions = {
+
     //default setting options
     hasMark: true,              //是否带遮罩
     modelWidth: 600,            //弹窗宽度
@@ -25,4 +26,5 @@ modalOptions = {
     normalColor: '#fff',             //取消按钮字体颜色
     callback: null,                   //确定按钮回调函数
     duration: 3000                     //弹窗显示时间
+    
   };
