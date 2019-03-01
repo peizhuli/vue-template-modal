@@ -1,9 +1,9 @@
-##1.main.js中引入插件
-'import vueModal from 'vue-template-modal';'
-###提供方法：$templateModal
+## 1.main.js中引入插件 
+'import vueModal from 'vue-template-modal';' 
+### 提供方法：$templateModal
 'Vue.use(vueModal);'
-##2.使用：this.$templateModal(modalOptions );
-##3.modalOptions 参数配置
+## 2.使用：this.$templateModal(modalOptions );
+## 3.modalOptions 参数配置
 modalOptions = {
     //default setting options
     hasMark: true,              //是否带遮罩
